@@ -14,7 +14,7 @@ provider "aws" {
 }
 
 data "aws_ssm_parameter" "latest_image_tag" {
-  name = "/app/fastapi-llm/latest-image-tag"
+  name = "/app/${var.api_name}/latest-image-tag"
 }
 
 module "vpc" {

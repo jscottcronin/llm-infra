@@ -17,3 +17,8 @@ variable "container_image" {
 variable "container_port" {
   default = 8000
 }
+
+variable "api_name" {
+  default     = "fastapi-llm"
+  description = "Name of the FastAPI application repository"
+}
